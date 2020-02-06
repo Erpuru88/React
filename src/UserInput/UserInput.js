@@ -3,7 +3,7 @@ import React from 'react';
 const UserInput = (props) => {
     return(
         <div className="inputFields">
-            <input name="userName" type="text" placeholder="Enter your name.."></input><br/>
+            <input name="userName" type="text" value={props.name} onChange={props.change}></input><br/>
             <input name="userAge" type="number" placeholder="Enter your age.."></input>
         </div>
     )
